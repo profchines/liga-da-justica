@@ -9,7 +9,12 @@ export const Card = (props) => {
                 width="100%"
                 src={props.srcImg}
             />
-            <h2>{props.titulo}</h2>
+            <h2
+                style={{
+                    textAlign: 'center',
+                    marginTop: 10
+                }}
+            >{props.titulo}</h2>
 
         </div>
     )

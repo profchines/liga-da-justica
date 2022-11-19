@@ -1,20 +1,21 @@
 import './styles.css'
 
-export const Card = (props) => {
+export const Card = ({srcImg, titulo, ...resto}) => {
     return (
         <div
             className="card"
+            {...resto}
         >
             <img
                 width="100%"
-                src={props.srcImg}
+                src={srcImg}
             />
             <h2
                 style={{
                     textAlign: 'center',
                     marginTop: 10
                 }}
-            >{props.titulo}</h2>
+            >{titulo}</h2>
 
         </div>
     )
